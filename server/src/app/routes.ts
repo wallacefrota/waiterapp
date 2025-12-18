@@ -1,7 +1,7 @@
 import { Router } from "express";
-import CategoriesController from "./controllers/Categories";
-import ProductsController from "./controllers/Products";
-import OrdersController from "./controllers/Orders";
+import CategoriesController from "./controllers/categories.controller";
+import ProductsController from "./controllers/products.controller";
+import OrdersController from "./controllers/orders.controller";
 
 import multer, { diskStorage } from "multer";
 import path from "node:path";

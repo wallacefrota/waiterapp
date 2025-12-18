@@ -1,8 +1,8 @@
 import express, {Request, Response, NextFunction} from "express";
 import mongoose from "mongoose";
 import routes from "./src/app/routes";
-import { ResourceAlreadyExists } from "./src/app/functions/errors/resource-already-exists";
-import { ResourceNotFound } from "./src/app/functions/errors/resource-not-found";
+import { ResourceAlreadyExists } from "./src/app/errors/resource-already-exists.error";
+import { ResourceNotFound } from "./src/app/errors/resource-not-found.error";
 import path from "node:path";
 
 async function startServer() {
